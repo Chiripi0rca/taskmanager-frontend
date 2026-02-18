@@ -1,0 +1,48 @@
+<div class="lista-container">
+  <h2>📋 Mis Tareas</h2>
+
+  <!-- Estado de carga -->
+  <div *ngIf="cargando" class="loading">
+    Cargando tareas...
+  </div>
+
+  <!-- Lista vacía -->
+  <div *ngIf="!cargando && tareas.length === 0" class="empty">
+    <p>🎉 No tienes tareas pendientes</p>
+    <p class="subtitle">¡Crea tu primera tarea arriba!</p>
+  </div>
+
+  <!-- Lista de tareas -->
+  <div *ngIf="!cargando && tareas.length > 0" class="tareas">
+    <div 
+      *ngFor="let tarea of tareas" 
+      class="tarea-item"
+      [class.completada]="tarea.completada"
+    >
+      <div class="tarea-content">
+        <div class="checkbox-container">
+          <input 
+            type="checkbox" 
+            [checked]="tarea.completada"
+            (change)="toggleCompletada(tarea)"
+          >
+        </div>
+        
+        <div class="tarea-info">
+          <h3 [class.tachado]="tarea.completada">{{ tarea.titulo }}</h3>
+          <p *ngIf="tarea.descripcion">{{ tarea.descripcion }}</p>
+        </div>
+      </div>
+
+      <div class="tarea-actions">
+        <button 
+          class="btn-delete" 
+          (click)="eliminarTarea(tarea.id)"
+          title="Eliminar"
+        >
+          🗑️
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="form-container">
+  <h2>➕ Nueva Tarea</h2>
+  
+  <form (ngSubmit)="crearTarea()">
+    <div class="form-group">
+      <label for="titulo">Título *</label>
+      <input 
+        type="text" 
+        id="titulo" 
+        name="titulo"
+        [(ngModel)]="nuevaTarea.titulo"
+        placeholder="Ej: Estudiar Angular"
+        required
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea 
+        id="descripcion" 
+        name="descripcion"
+        [(ngModel)]="nuevaTarea.descripcion"
+        placeholder="Detalles de la tarea (opcional)"
+        rows="3"
+      ></textarea>
+    </div>
+
+    <div class="form-group checkbox">
+      <label>
+        <input 
+          type="checkbox" 
+          name="completada"
+          [(ngModel)]="nuevaTarea.completada"
+        >
+        Marcar como completada
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Crear Tarea
+    </button>
+  </form>
+</div>
