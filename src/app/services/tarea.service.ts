@@ -10,7 +10,7 @@ import { observableToBeFn } from "rxjs/internal/testing/TestScheduler";
     providedIn: 'root'
 })
 export class TareaService{
-    private apiUrl = 'http://localhost:8080/api/tareas'
+    private apiUrl = 'https://taskmanager-api-production-5a75.up.railway.app/api/tareas'
 
     constructor(private http: HttpClient) { }
 
