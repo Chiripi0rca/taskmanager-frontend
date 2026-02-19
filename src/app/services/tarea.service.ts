@@ -4,13 +4,14 @@ import { Observable } from "rxjs";
 import { Tarea } from "../models/tarea.model";
 import { TareaCreate } from "../models/tarea-create.model";
 import { TareaUpdate } from "../models/tarea-update.model";
-import { observableToBeFn } from "rxjs/internal/testing/TestScheduler";
+import { environment } from "../../enviroments/environment.prod";
+
 
 @Injectable({
     providedIn: 'root'
 })
 export class TareaService{
-    private apiUrl = 'http://localhost:8080/api/tareas'
+    private apiUrl = environment.apiUrl;
 
     constructor(private http: HttpClient) { }
 
