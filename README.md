@@ -1,59 +1,77 @@
-# TaskmanagerFrontend
+# Task Manager — Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+> Interfaz web para gestión de tareas conectada a una API REST en Spring Boot.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🇲🇽 Español
 
+### Descripción
+Interfaz web desarrollada con HTML, CSS y JavaScript para gestionar tareas. Se conecta al backend de Task Manager (Spring Boot) para realizar operaciones CRUD.
+
+### Tecnologías
+- HTML
+- CSS
+- JavaScript
+
+### Características
+- Crear, editar y eliminar tareas
+- Interfaz web sencilla e intuitiva
+- Conectada a API REST en Spring Boot
+
+### Instalación local
+
+**Requisitos:**
+- Backend corriendo en localhost:8080
+
+**Pasos:**
 ```bash
-ng serve
+# 1. Clonar el repositorio
+git clone https://github.com/Chiripi0rca/taskmanager-frontend.git
+cd taskmanager-frontend
+
+# 2. Abrir index.html en el navegador
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Backend relacionado
+[taskmanager-api](https://github.com/Chiripi0rca/taskmanager-api)
 
-## Code scaffolding
+### Autor
+Ricardo Ramos Puga— [GitHub](https://github.com/Chiripi0rca)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
+## 🇺🇸 English
+
+### Description
+Web interface built with HTML, CSS and JavaScript for managing tasks. Connects to the Task Manager backend (Spring Boot) to perform CRUD operations.
+
+### Tech Stack
+- HTML
+- CSS
+- JavaScript
+
+### Features
+- Create, edit and delete tasks
+- Simple and intuitive web interface
+- Connected to Spring Boot REST API
+
+### Local Setup
+
+**Requirements:**
+- Backend running on localhost:8080
+
+**Steps:**
 ```bash
-ng generate component component-name
+# 1. Clone the repository
+git clone https://github.com/Chiripi0rca/taskmanager-frontend.git
+cd taskmanager-frontend
+
+# 2. Open index.html in your browser
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Related Backend
+[taskmanager-api](https://github.com/Chiripi0rca/taskmanager-api)
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Author
+Ricardo Ramos Puga— [GitHub](https://github.com/Chiripi0rca)
